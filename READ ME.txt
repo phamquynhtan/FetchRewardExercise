@@ -1,0 +1,3 @@
+Hello, My name is Quynh.
+For the app to run, please set up android studio an then pull the project with the link I sent. Set up emulator API 30 then run the app.
+The app will run and display the list as the project's requirements.

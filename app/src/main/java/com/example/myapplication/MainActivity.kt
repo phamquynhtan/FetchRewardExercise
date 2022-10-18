@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.service.autofill.Validators.and
@@ -43,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private fun getAllItem() {
         val url = "https://fetch-hiring.s3.amazonaws.com/hiring.json"
         val queue = Volley.newRequestQueue(this@MainActivity)
