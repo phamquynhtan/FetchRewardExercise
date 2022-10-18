@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRV"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:background="#B0B4B7"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="4dp"
+        android:background="#B1B5B8"
+        android:text="ListID"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRV"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:background="#AFB3B6"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRV"
+        android:layout_width="379dp"
+        android:layout_height="550dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="-1dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
